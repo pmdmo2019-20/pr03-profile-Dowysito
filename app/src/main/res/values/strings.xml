@@ -2,4 +2,17 @@
     <string name="app_name">Profile</string>
     <string name="avatar_title">Select Avatar</string>
     <string name="profile_title">User profile</string>
+    <string name="lblName">Name (*)</string>
+    <string name="hintName">(name)</string>
+    <string name="lblEmail">Email (*)</string>
+    <string name="lblPhone">Phone number (*)</string>
+    <string name="lblAdress">Address (*)</string>
+    <string name="hintAddress">(address)</string>
+    <string name="hintPhone">(phone)</string>
+    <string name="hintEmail">(email)</string>
+    <string name="lblWeb">Web (*)</string>
+    <string name="hintWeb">(url)</string>
+    <string name="lblRequired">(*) Required</string>
+    <string name="avatar_select">Select Avatar</string>
+    <string name="profile_save">imgSave</string>
 </resources>

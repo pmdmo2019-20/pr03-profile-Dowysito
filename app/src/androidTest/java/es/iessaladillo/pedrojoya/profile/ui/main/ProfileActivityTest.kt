@@ -110,9 +110,9 @@ class ProfileActivityTest {
         onView(withId(R.id.txtEmail)).perform(click(), closeSoftKeyboard(), replaceText("test@test.com"))
         onView(withId(R.id.txtPhonenumber)).perform(click(), closeSoftKeyboard(), replaceText("666666666"))
         onView(withId(R.id.txtAddress)).perform(click(), closeSoftKeyboard(), replaceText("test"))
-        onView(withId(R.id.txtWeb)).perform(click(), closeSoftKeyboard(), replaceText("test"))
+        onView(withId(R.id.lblWeb)).perform(click(), closeSoftKeyboard(), replaceText("test"))
         onView(withId(R.id.mnuSave)).perform(click())
-        onView(withId(R.id.txtWeb)).check(
+        onView(withId(R.id.lblWeb)).check(
             matches(
                 hasErrorText(
                     testRule.activity.getString(R.string.profile_invalid_web)
@@ -155,11 +155,11 @@ class ProfileActivityTest {
 
     @Test
     fun shouldWebEditTextShowNoErrorWhenValidData() {
-        onView(withId(R.id.txtWeb)).perform(
+        onView(withId(R.id.lblWeb)).perform(
             click(), closeSoftKeyboard(),
             replaceText("http://www.test.com")
         )
-        onView(withId(R.id.txtWeb)).check(matches(hasErrorText(isEmptyOrNullString())))
+        onView(withId(R.id.lblWeb)).check(matches(hasErrorText(isEmptyOrNullString())))
     }
 
     // ImeOptions.
@@ -197,7 +197,7 @@ class ProfileActivityTest {
             typeText("test"),
             pressImeActionButton()
         )
-        onView(withId(R.id.txtWeb)).perform(closeSoftKeyboard()).check(matches(hasFocus()))
+        onView(withId(R.id.lblWeb)).perform(closeSoftKeyboard()).check(matches(hasFocus()))
     }
 
 }

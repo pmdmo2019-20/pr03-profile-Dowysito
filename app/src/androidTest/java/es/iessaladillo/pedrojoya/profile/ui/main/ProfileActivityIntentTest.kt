@@ -74,7 +74,7 @@ class ProfileActivityIntentTest {
 
     @Test
     fun shouldWebSendIntent() {
-        val txtWeb = onView(withId(R.id.txtWeb))
+        val txtWeb = onView(withId(R.id.lblWeb))
         txtWeb.perform(click(), replaceText("http://www.iessaladillo.es"), closeSoftKeyboard())
         onView(withId(R.id.imgWeb)).perform(click())
         intended(
