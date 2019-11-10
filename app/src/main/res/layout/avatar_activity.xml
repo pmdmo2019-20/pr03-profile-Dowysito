@@ -1,6 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <CheckBox
+        android:id="@+id/checkBoxBulbasaur"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/bulbasur"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxFeebas"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxCubone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxChikorita"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/chikorita"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxGyarados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxCubone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCubone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/cubone"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxGiratina"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxChikorita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxBulbasaur"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFeebas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/feebas"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxJiggly"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxGiratina"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxBulbasaur" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGiratina"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/giratina"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxPikachu"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxGyarados"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxFeebas"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCubone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGyarados"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/gyarados"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxPachirisu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxGiratina"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxChikorita" />
+
+    <CheckBox
+        android:id="@+id/checkBoxJiggly"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/jigglypuff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxPikachu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxFeebas" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPachirisu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/pachirisu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxPikachu"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxGyarados" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPikachu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableBottom="@drawable/pikachu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxPachirisu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxJiggly"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxGiratina" />
 </androidx.constraintlayout.widget.ConstraintLayout>

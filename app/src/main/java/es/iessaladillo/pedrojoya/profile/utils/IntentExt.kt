@@ -1,5 +1,6 @@
 package es.iessaladillo.pedrojoya.profile.utils
 
+import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -17,6 +18,11 @@ fun isActivityAvailable(ctx: Context, intent: Intent): Boolean {
 
 fun newViewUriIntent(uri: Uri): Intent {
     return Intent(Intent.ACTION_VIEW, uri)
+}
+
+fun newWebSearchIntent(text: String): Intent {
+    return Intent(Intent.ACTION_WEB_SEARCH)
+        .putExtra(SearchManager.QUERY, text)
 }
 
 fun newEmailIntent(email: String): Intent {

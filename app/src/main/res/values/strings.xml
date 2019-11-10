@@ -14,5 +14,5 @@
     <string name="hintWeb">(url)</string>
     <string name="lblRequired">(*) Required</string>
     <string name="avatar_select">Select Avatar</string>
-    <string name="profile_save">imgSave</string>
+    <string name="profile_save"></string>
 </resources>
